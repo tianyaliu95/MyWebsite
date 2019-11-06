@@ -23,7 +23,7 @@
 }
 body {
   font-family: 'Lato';
-  background: #f0f0f0;
+  background: whitesmoke;
   color: #333333;
 }
 .main {
@@ -111,12 +111,16 @@ body {
 }
 .social-link:hover {
   text-decoration: none;
+  transform: scale(1.25);
+  transition: all 0.2s ease-in-out;
 }
 .link-github {
   color: #454545;
 }
 .link-github:hover {
   color: #2b2b2b;
+  transform: scale(1.25);
+  transition: all 0.2s ease-in-out;
 }
 .link-twitter {
   color: #33ccff;
@@ -231,4 +235,47 @@ body {
   margin-left: 5px;
   width: 30px;
   height: 30px;
+}
+
+/*.underline:hover {
+  text-decoration: none;
+}*/
+
+/*.underline:hover::before { 
+  content: ""; 
+} 
+.underline:hover::after { 
+  content: ""; 
+} */
+
+.underline {
+  text-decoration: none !important;
+  position: relative;
+}
+
+.underline:after,.underline:before {
+  content: '';
+  text-decoration: none;
+  margin-bottom: 1px;
+  height: 1.8px;
+  position: absolute;
+  bottom: -5px;
+  left: 0%;
+  width: 0%;
+  background: #357ebd;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.75s;
+  opacity: 0;
+}
+
+.underline:hover:before {
+  width: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.underline:hover:after {
+  width: 50%;
+  right: 50%;
+  opacity: 1;
 }
