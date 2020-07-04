@@ -24,6 +24,10 @@
   padding-right: 10px;
   border: 1px solid #357ebd;
 }
+.img-circle {
+  object-fit: cover;
+  object-position: center;
+}
 body {
   font-family: 'Lato';
   background: whitesmoke;
@@ -45,6 +49,7 @@ body {
   margin-bottom: 10px;
   border-width: 1px 0 0 0;
 }
+
 .background-card {
   padding: 10px 20px;
 }
@@ -267,7 +272,7 @@ body {
   width: 0%;
   background: #357ebd;
   transition: all 0.2s ease-in-out;
-  transition-duration: 0.75s;
+  transition-duration: 0.3s;
   opacity: 0;
 }
 
@@ -281,4 +286,58 @@ body {
   width: 50%;
   right: 50%;
   opacity: 1;
+}
+
+@media only screen and (max-width: 780px) {
+  .img-circle {
+    margin-bottom: -2.3rem;
+  }
+  .affix {
+        position: static;
+  }
+  .contact-details .detail {
+    margin-top: -0.25rem;
+  } 
+  .background-details .detail {
+    margin-top: -2rem;
+    margin-left: -1.25rem;
+  } 
+  .h4 {
+    font-size: 16px;
+  }
+  .background-details .detail .icon,
+  .background-details .detail .info {
+    display: table-cell;
+    padding: 0;
+  }
+  .about-me {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .card-nested {
+    margin-left: -4rem;
+  }
+  ul ul, ol ul, ul ol, ol ol {
+    margin-left: -2rem;
+    margin-bottom: 2rem;
+  }
+  .title {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .end-of-page {
+    margin-bottom: 200px;
+  }
+  .label {
+    margin-bottom: 1rem;
+  }
+  .info .sidebar {
+    padding: 10px 20px;
+  }
+  .master-degree-duation {
+    margin-bottom: 7rem;
+  }
+  .work-experience {
+    margin-bottom: -2rem;
+  }
 }
