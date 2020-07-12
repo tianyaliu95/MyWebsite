@@ -28,6 +28,12 @@
   object-fit: cover;
   object-position: center;
 }
+.about-me {
+  margin-top: 2rem;
+}
+.about-me-title {
+  margin-top: -1.5rem;
+}
 body {
   font-family: 'Lato';
   background: whitesmoke;
