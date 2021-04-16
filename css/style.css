@@ -294,6 +294,10 @@ body {
   opacity: 1;
 }
 
+.label {
+  margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 780px) {
   .img-circle {
     margin-bottom: -2.3rem;
@@ -333,9 +337,6 @@ body {
   }
   .end-of-page {
     margin-bottom: 200px;
-  }
-  .label {
-    margin-bottom: 1rem;
   }
   .info .sidebar {
     padding: 10px 20px;
